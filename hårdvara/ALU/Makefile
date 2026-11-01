@@ -1,0 +1,51 @@
+# ============================================================
+# Makefile för GHDL-simulering
+# Användning:
+#   make          - kompilerar, länkar och kör simuleringen
+#   make wave     - öppnar vågformen i GTKWave
+#   make clean    - tar bort genererade filer
+# ============================================================
+
+# --- ÄNDRA DESSA ---------------------------------------------
+
+# VHDL-filer som ska kompileras (design först, testbänk sist)
+FILES = ALU.vhd ALU_tb.vhd
+
+# Namnet på testbänkens entity
+TB = ALU_tb
+
+# Hur länge simuleringen ska köras
+STOP = 3us
+
+# Namn på vågformsfilen
+VCD = out.vcd
+
+# -------------------------------------------------------------
+
+# Standardmål: kör hela kedjan
+all: run
+
+# Analyze: kompilera filerna (skapar .cf-fil)
+analyze:
+	ghdl -a $(FILES)
+
+# Elaborate: länka ihop komponenter för simulering
+elaborate: analyze
+	ghdl -e $(TB)
+
+# Run: kör simuleringen och skapa vcd-fil
+run: elaborate
+	ghdl -r $(TB) --stop-time=$(STOP) --vcd=$(VCD)
+
+# Öppna vågformen i Surfer (VSCode-tillägg)
+wave: run
+	code $(VCD)
+
+# Städa bort genererade filer
+clean:
+#Windows
+	-del /Q *.cf *.o $(VCD) $(TB).exe
+#Linux
+#rm -f *.cf *.o $(VCD) $(TB)
+
+.PHONY: all analyze elaborate run wave clean
