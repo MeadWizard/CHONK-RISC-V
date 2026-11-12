@@ -87,7 +87,7 @@ Om simuleringar ska köras flera gånger kan en surfer state-file (.surf.ron) sk
 Ett annat tips kan vara att automatisera det med en makefile likt Makefile_Exempel. Det går också att göra bash-script eller liknande men det är inte effektivt för flera utvecklare på olika maskiner eller för stora projekt. Observera att exemplet behöver ändras för make clean beroende på om du är på windows eller linux.
 
 ## Open source alternativ till grafisk design av hårdvara
-HDLDesigner har vi kommit i kontakt med i kursen TSTE12 vid LiU, men det är dyrt och kräver licens genom högskola eller företag. Det enda alternativet jag hittat till detta är en inte jättevass produkt på github: [Digital](https://github.com/hneemann/digital).
+HDLDesigner har vi kommit i kontakt med i kursen TSTE12 vid LiU, men det är dyrt och kräver licens genom högskola eller företag. Det enda alternativet jag hittat till detta är, [Digital](https://github.com/hneemann/digital), en utveckling av logicsim som används för utbildningssyfte. 
 
 ## Kodskelett/Mallar
 
