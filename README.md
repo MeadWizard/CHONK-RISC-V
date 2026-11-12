@@ -66,7 +66,7 @@ Kom ihåg att lägga till extensions för VHDL syntax highlighting och Surfer i 
 
 ## Hur simulerar man med GHDL?
 
-Man kan kan kompilera filer med hjälp av -a (för analyze) vilket MÅSTE göras i hierarkisk ordning (störst först). Man brukar kalla lägre hierarkiska entitys de som implementeras eller används i andra högre hierarkiska entitys. Så eftersom testbänkar implementerar det som ska testas gör att det testade (din "Unit Under Test")behöver kompileras först, därefter testbänken. Om jag använder/implementerar en mindre komponent inuti en större behöver de mindre kompileras först.
+Man kan kompilera filer med hjälp av -a (för analyze) vilket MÅSTE göras i hierarkisk ordning (störst först). Man brukar kalla lägre hierarkiska entitys de som implementeras eller används i andra högre hierarkiska entitys. Så eftersom testbänkar implementerar det som ska testas gör att det testade (din "Unit Under Test")behöver kompileras först, därefter testbänken. Om jag använder/implementerar en mindre komponent inuti en större behöver de mindre kompileras först.
 
 Typiskt Exempel:
 ```
