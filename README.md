@@ -76,7 +76,7 @@ ghdl -a vhdl-fil.vhdl vhdl-tb.vhdl
 # Elaborate: Länka komponenter för simulering, skapa objekt.
 ghdl -e vhdl-entity-tb
 
-# Run: Kör simulering med olika flaggor, vcd för format. Skapar en out.vcd-fil som kan öppnas med 
+# Run: Kör simulering med olika flaggor, vcd för format. Skapar en out.vcd-fil som kan öppnas med surfer
 ghdl -r vhdl-entity-tb --stop-time=1us --vcd=out.vcd 
 ```
 
