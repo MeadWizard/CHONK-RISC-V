@@ -6,7 +6,7 @@
 
 Projektet är en processorkärna (för FPGA syntetisering) som implementerar en RISC-V instruktionsuppsättning (***RV32I*** Maj 2010 UC Berkeley). Målet är kompabilitet med specifikationen och verifierabarhet genom tester.
 
-Projektet bygger vidare på ett grupparbete från kursen en kurs i datorkonstruktion där vi designade en processor som var anpassad för att spela Othello. Den processorn bestod av en 2-stegs pipeline och var uppdelat i program och dataminne, dvs hade en Harvard-arkitektur. Den hade ingen "Data-Forwarding" vilket innebar att många NOP:s behövde petas in manuellt efter vissa instruktioner i assembly-programmet som skulle exekveras på processorn.
+Projektet bygger vidare på ett grupparbete från en kurs i datorkonstruktion där vi designade en processor som var anpassad för att spela Othello. Den processorn bestod av en 2-stegs pipeline och var uppdelat i program och dataminne, dvs hade en Harvard-arkitektur. Den hade ingen "Data-Forwarding" vilket innebar att många NOP:s behövde petas in manuellt efter vissa instruktioner i assembly-programmet som skulle exekveras på processorn.
 
 | Status        |               |
 |---|---|
