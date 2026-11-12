@@ -71,20 +71,20 @@ Man kan kompilera filer med hjälp av -a (för analyze) vilket MÅSTE göras i h
 Typiskt Exempel:
 ```
 # Analyze: Kompilera filer. Skapar en .cf-fil.
-ghdl -a vhdl-fil.vhdl vhdl-tb.vhdl
+ghdl -a --std=08 vhdl-fil.vhdl vhdl-tb.vhdl
 
 # Elaborate: Länka komponenter för simulering, skapa objekt.
-ghdl -e vhdl-entity-tb
+ghdl -e --std=08 vhdl-entity-tb
 
 # Run: Kör simulering med olika flaggor, vcd för format. Skapar en out.vcd-fil som kan öppnas med surfer
-ghdl -r vhdl-entity-tb --stop-time=1us --vcd=out.vcd 
+ghdl -r --std=08 vhdl-entity-tb --stop-time=1us --vcd=out.vcd 
 ```
 
 För att kolla på simuleringen så öppnar du out.vcd i VSCode, då öppnas surfer automatiskt.
 
 Om simuleringar ska köras flera gånger kan en surfer state-file (.surf.ron) skapas, så man slipper välja vilka signaler som man vill titta på om och om igen för sin testbänk.
 
-Ett annat tips kan vara att automatisera det med ett makefile likt Makefile_Exempel. Observera att exemplet behöver ändras för make clean beroende på om du är på windows eller linux.
+Ett annat tips kan vara att automatisera det med en makefile likt Makefile_Exempel. Det går också att göra bash-script eller liknande men det är inte effektivt för flera utvecklare på olika maskiner eller för stora projekt. Observera att exemplet behöver ändras för make clean beroende på om du är på windows eller linux.
 
 ## Kodskelett/Mallar
 
