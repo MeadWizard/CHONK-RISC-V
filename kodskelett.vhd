@@ -11,7 +11,7 @@ USE ieee.numeric_std.all;
 ENTITY entity_name IS
 
 port (
-		A : in bit_vector(4 downto 1);  
+		X : in bit;  
 		Y : out bit 
     );
 
@@ -25,8 +25,7 @@ Beskrivning? Länk till diagram?
 ARCHITECTURE architecture_name OF entity_name IS
 BEGIN
 
-    -- Behaviour should be a 4-input NOR-gate.
-
-	Y <= A(4) or A(3) or A(2) or A(1);
+    -- Kommentar
+	Y <= X;
 
 END ARCHITECTURE architecture_name;
