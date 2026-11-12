@@ -89,6 +89,9 @@ Ett annat tips kan vara att automatisera det med en makefile likt Makefile_Exemp
 ## Open source alternativ till grafisk design av hårdvara
 HDLDesigner har vi kommit i kontakt med i kursen TSTE12 vid LiU, men det är dyrt och kräver licens genom högskola eller företag. Det enda alternativet jag hittat till detta är, [Digital](https://github.com/hneemann/digital), en utveckling av logicsim som används för utbildningssyfte. 
 
+## Referensguide för VHDL
+[Denna är rekommenderad från TSTE12](https://www.vhdl-online.de/).
+
 ## Kodskelett/Mallar
 
 Det finns också ett kodskelett man kan använda om man vill slippa skriva lite kod. (Se kodskelett.vhd)
