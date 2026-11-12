@@ -82,7 +82,7 @@ ghdl -r vhdl-entity-tb --stop-time=1us --vcd=out.vcd
 
 För att kolla på simuleringen så öppnar du out.vcd i VSCode, då öppnas surfer automatiskt.
 
-Om simuleringar ska köras flera gånger kan en surfer state-file (.surf.ron) så man slipper välja vilka signaler som du vill titta på för din testbänk.
+Om simuleringar ska köras flera gånger kan en surfer state-file (.surf.ron) skapas, så man slipper välja vilka signaler som man vill titta på om och om igen för sin testbänk.
 
 Ett annat tips kan vara att automatisera det med ett makefile likt Makefile_Exempel. Observera att exemplet behöver ändras för make clean beroende på om du är på windows eller linux.
 
