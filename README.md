@@ -90,7 +90,7 @@ Ett annat tips kan vara att automatisera det med en makefile likt Makefile_Exemp
 HDLDesigner har vi kommit i kontakt med i kursen TSTE12 vid LiU, men det är dyrt och kräver licens genom högskola eller företag. Det enda alternativet jag hittat till detta är, [Digital](https://github.com/hneemann/digital), en utveckling av logicsim som används för utbildningssyfte. 
 
 ## Referensguide för VHDL
-[Denna är rekommenderad från TSTE12](https://www.vhdl-online.de/).
+[Denna är rekommenderad från TSTE12](https://www.vhdl-online.de/). [Digilent verkade bra också](https://digilent.com/reference/programmable-logic/guides/getting-started-with-vhdl).
 
 ## Kodskelett/Mallar
 
