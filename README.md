@@ -19,7 +19,7 @@ Giltiga statusvärden är ej *påbörjad*, *pågår*, *klar*, samt *klar och tes
 
 ### Verifiering
 
-Verifieringen att detta projekt uppfyller kriterierna för att räknas som RV32I-kompatibel kommer vara icke-formell/funktionell verifiering främst genom egna enhetstester genom testbänkar. Projektet ska även verifieras med officiella kompatibilitetstester i form av som riscv-arch-test. För att använda de testerna behöver man skriva ett plugin för att tala of hur kärnan startas och och minnessignaturer utläses. 
+Verifieringen av att detta projekt uppfyller kriterierna för att räknas som RV32I-kompatibel kommer vara icke-formell/funktionell verifiering främst genom egna enhetstester genom testbänkar. Projektet ska även verifieras med officiella kompatibilitetstester i form av som riscv-arch-test. För att använda de testerna behöver man skriva ett plugin för att tala of hur kärnan startas och och minnessignaturer utläses. 
   
 ## Struktur för projektet
 
